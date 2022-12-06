@@ -4,13 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Catalog</title>
 </head>
 <body>
-    <header></header>
+    <<header class="main header">
+        <a href="index.html"><img src="#" alt="Лого Седоны"></a>
+        <nav class="main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="contacts.html">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Гостинницы</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Поиск</a>
+                </li>
+                <li>
+                    <a href="#">Избранное</a>
+                </li>
+                <li>
+                    <button type="button">Хочу сюда</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        каталог отелей
+        <section class="hotels-in-sedona">
+        <h1 class="visually-hidden">Гостинницы Седоны</h1>
+        <ol class="bread-crubs">
+            <li>Гостинницы</li>
+        </ol>
+        <form name="infrastructure" id="infrastructure">
+            <p>Инфраструктура</p>
+            <input type="checkbox" id="pull">Бассейн</input>
+            <input type="checkbox" id="parking">Парковка</input>
+            <input type="checkbox" id="WI-FI">WI-FI</input>
+        </form>
+        <form name="type of apartaments" id="type-of-apartaments" value="">
+            <p>Тип жилья</p>
+           <label class="visually-hidden"> Гостинница
+                <input type="radio" id="hotel">Гостинница</input>
+            </label>
+            <label class="visually-hidden"> Мотель
+                <input type="radio" id="motel">Мотель</input>
+            </label>
+            <label class="visually-hidden"> Апартаменты
+                <input type="radio" id="apartaments">Апартаменты</input>
+            </label>
+        </form>
+        <p>стоимость</p>
+        <button>Применить</button>
+        <button>Сбросить</button>
+    </section>
+    <section class="how-find">
+        <h2>Найдено гостинниц</h2>
+            <select>
+                <option>Сначала дешевые</option>
+                <option>Сначала дорогие</option>
+                <option>Самые популярные</option>
+            </select>
+              <ul>
+                <li>Сортировка</li>
+                <li>Каталог</li>
+                <li>Меню</li>
+              </ul>
+    </section>
+    <section class="hotels-list">
+        <h2  class="visually-hidden">Выбор гостиниц</h2>
+     <ul>
+        <li>
+            <img href="#" alt="Гостиница Amara Resort & Spa">
+            Amara Resort & Spa <br>
+            Гостиница  От 4000 <br>
+            <button>Подробнее</button>
+            <button>В избранное</button><br>
+            количество звезд 
+            <button>Рейтинг: 8,5</button>
+        </li><br>
+
+        <li><img href="#" alt="Гостиница Villas at Poco Diablo">
+            Villas at Poco Diablo
+            Гостиница  От 5000 ₽ <br>
+            <button>Подробнее</button>
+            <button>В избранное</button><br>
+            количество звезд 
+            <button>Рейтинг: 9,2</button>
+        </li><br>
+
+        <li><img href="#"alt="Гостиница Desert Quail Inn">
+            Desert Quail Inn <br>
+            Гостиница От 2500 ₽ <br>
+            <button>Подробнее</button>
+            <button>В избранное</button><br>
+            количество звезд 
+            <button>Рейтинг: 6,9</button>
+        </li><br>
+
+        <li><img href="#" alt="Гостиница GreenTree Inn">
+            GreenTree Inn <br>
+            Гостиница  От 1500 ₽ <br>
+            <button>Подробнее</button>
+            <button>В избранное</button><br>
+            количество звезд 
+            <button>Рейтинг: 5,0</button>
+        </li>
+     </ul>
+     <section class="number-of-page">
+        <h2>Кнопки переключения страниц</h2>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>...</button>
+      <button>10</button>     
+      Гостиниц на странице:
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+     </section>
+    
+     <section class="mailing-list"><br>
+        <h2>Рассылка</h2>
+        <strong>Подпишитесь на рассылку</strong>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    </section> 
     </main>
-    <footer></footer>
+
+    <footer>
+        <ul>
+            <li>Во вконтакте</li>
+            <li>Телеграм</li>
+            <li>Ютуб</li>
+        </ul>
+        <a href="0967980556">0967980556</a>
+        <img href="#" alt="Лого HTMLакадемии">
+
+    </footer>
 </body>
 </html>
