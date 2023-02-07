@@ -38,6 +38,9 @@ body {
     font-family: PT Sans, sans-serif;
     font-size: 18px;
     line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 h1 {
@@ -47,18 +50,22 @@ h1 {
 }
 
 html {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-
-.about-Sedona {
+.about-sedona {
 background-image: url("../img/index-background.jpg");
 width: 1200px;
 height: 485px;
 background-repeat: no-repeat;
-
 }
 
 .blue-container {
@@ -80,7 +87,7 @@ background-repeat: no-repeat;
 .wrapper {
   width: 1200px;
   margin: 0 auto;
- 
+  flex-grow: 1;
 }
 
 .blue-wrapper {
