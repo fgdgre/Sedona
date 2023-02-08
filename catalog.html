@@ -11,34 +11,38 @@
 
 <body>
         <header>
-            <nav class="main-navigation">
-                <a href="index.html" class="navigation-image"><img src="img/sedona-logo.jpg" width="137" height="70"
-                        alt="Лого Седоны"></a>
+        <nav class="main-navigation">
+            <a href="#" class="navigation-image"><img src="img/sedona-logo.jpg" width="137" height="70"
+                    alt="Лого Седоны" /></a>
 
-                <ul class="first-navigation-list lists-style">
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">О нас</a>
-                    </li>
-                    <li>
-                        <a href="catalog.html">Гостинницы</a>
-                    </li>
-                </ul>
-                <ul class="first-navigation-list lists-style">
-                    <li>
-                        <a href="#">Поиск</a>
-                    </li>
-                    <li>
-                        <a href="#">Избранное</a>
-                    </li>
-                    <li>
-                        <button type="button">Хочу сюда</button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <ul class="first-navigation-list lists-style">
+                <li class="first-navigation-items">
+                    <a href="">Главная</a>
+                </li>
+                <li class="first-navigation-items">
+                    <a href="contacts.html">О нас</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Гостинницы</a>
+                </li>
+            </ul>
+            <ul class="second-navigation-list lists-style">
+                <li>
+                    <a href="#">
+                        <img src="img/icons/search-icon.svg" alt="Поиск" width="44" height="66">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное" width="44" height="66">
+                    </a>
+                </li>
+                <li>
+                    <button type="button">Хочу сюда</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
         <main>
             <div class="wrapper">
             <section class="hotels-in-sedona">
@@ -116,14 +120,14 @@
                     <option>Самые популярные</option>
                 </select>
                 <ul class="options lists-style">
-                    <li>
-                        <button>Сортировка</button>
+                    <li class="options-item">
+                        <a><img src="img/icons/table-icon.svg"></a>
+                    </li>
+                    <li class="options-item">
+                        <a><img src="img/icons/slideshow-icon.svg"></a>
                     </li>
                     <li>
-                        <button>Каталог</button>
-                    </li>
-                    <li>
-                        <button>Меню</button>
+                        <a><img src="img/icons/view-icon.svg"></a>
                     </li>
                 </ul>
             </section>
@@ -134,70 +138,87 @@
                         <img src="img/hotels/Amara Resort & Spa.jpg" width="300" height="211"
                             alt="Гостиница Amara Resort & Spa">
                         <p>Amara Resort & Spa</p>
-                        <p>Гостиница От 4000</p>
+                        <p>Гостиница От 4000 ₽</p>
+                      <div class="hotels-list-botton">
                         <button class="button-more">Подробнее</button>
-                        <button class="button-favorite">В избранное</button><br>
-                        количество звезд
+                        <button class="button-favorite-blue">В избранное</button>
+                      </div>
+                      <div>
+                        <img src="img/icons/4-stars-icon.svg">
                         <button class="button-rating">Рейтинг: 8,5</button>
+                    </div>
                     </li>
 
                     <li class="hotels-list-item"><img src="img/hotels/Villas at Poco Diablo.jpg" width="300"
                             height="211" alt="Гостиница Villas at Poco Diablo">
+                      
                         <p>Villas at Poco Diablo</p>
                         <p>Гостиница От 5000 ₽ </p>
+                        <div class="hotels-list-botton">
                         <button class="button-more">Подробнее</button>
-                        <button class="button-favorite">В избранное</button><br>
-                        количество звезд
+                        <button class="button-favorite-green">В избранное</button>
+                    </div>
+                    <div>
+                        <img src="img/icons/4-stars-icon.svg">
                         <button class="button-rating">Рейтинг: 9,2</button>
+                    </div>
                     </li>
 
                     <li class="hotels-list-item"><img src="img/hotels/Desert Quail Inn.jpg" width="300" height="211"
                             alt="Гостиница Desert Quail Inn">
                         <p>Desert Quail Inn</p>
                         <p>Гостиница От 2500 ₽</p>
+                        <div class="hotels-list-botton">
                         <button class="button-more">Подробнее</button>
-                        <button class="button-favorite">В избранное</button><br>
-                        количество звезд
+                        <button class="button-favorite-blue">В избранное</button><br>
+                        </div>
+                        <div>
+                            <img src="img/icons/3-stars-icon.svg">
                         <button class="button-rating">Рейтинг: 6,9</button>
+                    </div>
                     </li>
 
                     <li class="hotels-list-item"><img src="img/hotels/GreenTree Inn.jpg" width="300" height="211"
                             alt="Гостиница GreenTree Inn">
                         <p> GreenTree Inn </p>
                         <p>Гостиница От 1500 ₽ </p>
+                        <div class="hotels-list-botton">
                         <button class="button-more">Подробнее</button>
-                        <button class="button-favorite">В избранное</button><br>
-                        количество звезд
+                        <button class="button-favorite-blue">В избранное</button>
+                        </div>
+                        <div>
+                            <img src="img/icons/2-stars-icon.svg">
                         <button class="button-rating">Рейтинг: 5,0</button>
+                    </div>
                     </li>
                 </ul>
             </section>
             <section class="number-of-page">
                 <h2 class="visually-hidden">Кнопки переключения страниц</h2>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>...</button>
-                <button>10</button>
-                <div class="how-many-hotels">
-                    Гостиниц на странице:
-
-                    <select>
+                <button class="number-of-page-gray">1</button>
+                <button class="number-of-page-blue">2</button>
+                <button class="number-of-page-blue">3</button>
+                <button class="number-of-page-blue">4</button>
+                <button class="number-of-page-blue">...</button>
+                <button class="number-of-page-blue last">10</button>
+                    <p class="number-of-page-paragraph">Гостиниц на странице:</p>
+                    <select class="number-of-page-choose">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
-                    </select>
-                
+                    </select>        
             </section>
 
             <section class="mailing-list-2">
                 <h2>Рассылка</h2>
                 <strong>Подпишитесь на рассылку</strong>
-                <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form class="contacts">
+                <p>
+                    Только полезная информация и никакого спама, честное бойскаутское!
+                </p>
+                <form>
                     <label for="mailing-list"></label>
-                    <input type="text" name="email" id="mailing-list" value="Ваш имеил">
+                    <input type="text" name="email" id="mailing-list" value="Ваш имеил" />
                 </form>
             </section>
          </div>

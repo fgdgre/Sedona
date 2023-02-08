@@ -61,6 +61,13 @@ main {
   flex-grow: 1;
 }
 
+bottom {
+  font-family: PT Sans, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
 .about-sedona {
 background-image: url("../img/index-background.jpg");
 width: 1200px;
@@ -282,6 +289,9 @@ padding-top: 20px;
 margin-right: 78px;
 width: 290px;
 margin-bottom: 60px;
+padding-left: 20px;
+padding: 14px;
+
 }
 
 .hotels-list {
@@ -301,12 +311,27 @@ margin-bottom: 60px;
 }
 
 .options {
-  display: inline;
+  display: flex;
 }
 
-.how-many-hotels {
-  text-align: end;
+.number-of-page {
+  width: 1056px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  box-sizing: border-box;
 }
+
+.number-of-page-choose {
+  width: 160px;
+  height: 49px;
+  padding: 14px 20px;
+
+}
+
+.last {
+  margin-right: 219px;
+}
+
 
 .mailing-list-2 {
   text-align: center;
@@ -328,4 +353,77 @@ margin-bottom: 60px;
 
 .favorite-icon {
   padding-right: 20px;
+}
+
+.options-item {
+  padding-right: 8px;
+}
+
+.button-favorite-blue {
+  background-color: #82B3D3;
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+}
+
+.button-favorite-green {
+  background-color:#7DB54F ;
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+}
+
+.button-more {
+  background-color:#756157 ;
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.button-rating {
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.hotels-list-botton {
+  margin-bottom: 18px;
+}
+
+.hotels-list-wrapper {
+padding: 20px;
+padding-right: 16px;
+}
+
+.number-of-page-blue {
+  background-color: #82B3D3;
+  color: white;
+  width: 66px;
+  height: 66px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.number-of-page-gray {
+  width: 66px;
+  height: 66px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.number-of-page-paragraph {
+  display: inline;
+  padding-right: 51px;
 }
