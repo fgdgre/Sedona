@@ -67,29 +67,48 @@ bottom {
     line-height: 21px;
 }
 
-
 .about-sedona {
-background-image: url("../img/index-background.jpg");
-width: 1200px;
-height: 485px;
-background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url("../img/index-background.jpg");
+  width: 1200px;
+  height: 485px;
+  background-repeat: no-repeat;
 }
 
 .blue-container {
+  box-sizing: border-box;
   background-color: #82B3D3;
   color: white;
   width: 400px;
   height: 384px;
   text-align: center;
+  padding-top: 92px;
+  flex-grow: 1;
+}
+.position-center {
+
+ width: 230px;
+ margin-left: auto;
+ margin-right: auto;
+ 
 }
 
 .blue-container-reversed {
+  box-sizing: border-box;
   background-color: #82B3D3;
   color: white;
   width: 400px;
   height: 384px; 
   text-align: center;
+  padding-top: 92px;
+  flex-grow: 1;
 }
+
+.canyon {
+ margin: 0 auto; 
+} 
 
 .wrapper {
   width: 1200px;
@@ -99,6 +118,7 @@ background-repeat: no-repeat;
 
 .blue-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mailing-list {
@@ -107,6 +127,15 @@ background-repeat: no-repeat;
  text-align: center;
  color: white;
  height: 411px; 
+ padding-top: 92px;
+ box-sizing: border-box;
+}
+
+.mailing-list-paragraph {
+ display: flex;
+ justify-content: center;
+ margin-top: 30px; 
+ margin-bottom: 46px;
 }
 
 .hotels-in-sedona {
@@ -126,7 +155,14 @@ background-repeat: no-repeat;
 .first-navigation-list {
   width: 430px;
   display: flex;
-  margin-right: 240px;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+.navigation-links {
+color: black;
+text-decoration: none;
+font-weight: 700;
 }
 
 .navigation-image {
@@ -137,13 +173,32 @@ background-repeat: no-repeat;
 
 .second-navigation-list  {
   display: flex;
+  flex-wrap: wrap;
   width: 270px;
+  margin-left: auto;
   margin-right: 30px;
 }
 
 .welcom-to-sedona {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 54px;
+  padding-bottom: 28px;
+}
+
+.welcom-to-the-gorgeous{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 51px;
+}
+
+.welcom-to-the-gorgeous-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 11px;
 }
 
 .reasons {
@@ -154,26 +209,73 @@ background-repeat: no-repeat;
   display: none;
 }
 
+.decoration-pictures {
+    display: block;
+    height: 57px;
+    margin-top: auto;
+}
+
 .beautiful-build {
-  display: block;
+  display: flex;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
 .choice-housing {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .houses {
+  box-sizing: border-box;
   width: 400px;
   height: 384px;
  text-align: center;
  background-color: rgba(131, 179, 211, 0.12);
+  flex-grow: 1;
+}
+
+.padding {
+  padding-top: 80px;
+  margin: 0;
+}
+
+.advantages {
+  margin-top: 102px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intresting {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe {
+  display: block;
+  font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+
+.dates {
+ display: flex;
+ justify-content: center;
+ margin-top: 30px; 
 }
 
 .food {
   width: 400px;
   height: 384px;
   text-align: center;
+  flex-grow: 1;
 }
 
 .souvenirs {
@@ -181,10 +283,19 @@ background-repeat: no-repeat;
   height: 384px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+  flex-grow: 1;
 }
 
 .list-vrapper {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.hotels-in-sedona-paragraph {
+  font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+margin: 0;
 }
 
 .small-place {
@@ -192,6 +303,8 @@ background-repeat: no-repeat;
   height: 384px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .beatiful-trip {
@@ -199,6 +312,7 @@ background-repeat: no-repeat;
   height: 384px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.2);
+  flex-grow: 1;
 }
 
 .few-tourists {
@@ -206,11 +320,31 @@ background-repeat: no-repeat;
   height: 384px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+  flex-grow: 1;
 }
 
 .find-hotel {
   text-align: center;
   height: 417px;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+
+.button-brown-find-hotel {
+  background-color:#756157 ;
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  width: 584px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px; 
+  margin-top: 70px;
+  cursor: pointer;
 }
 
 .main-footer {
@@ -223,7 +357,6 @@ background-repeat: no-repeat;
 
 .social-media {
     margin-left: 70px; 
-    
     width: 142px;
     display: flex;
 }
@@ -249,6 +382,14 @@ background-repeat: no-repeat;
  width: 150px;
  height: 150px;
  margin-right: 70px;
+}
+
+.infrastructure-items {
+ margin: 10px 0; 
+}
+
+.apartaments-items {
+  margin: 10px 0; 
 }
 
 .navigation-wrapper {
@@ -281,7 +422,7 @@ padding-top: 20px;
 }
 
 .how-find {
-  display:inline-flex;
+  display:flex;
  width: 1060px;
 }
 
@@ -301,9 +442,16 @@ padding: 14px;
 }
 
 .hotels-list-item {
-  width: 340px;
+  width: 300px;
   height: 440px;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.margin-right:not(:nth-child(3n)) {
+  margin-right: 40px;
 }
 
 .whats-find {
@@ -312,6 +460,8 @@ padding: 14px;
 
 .options {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .number-of-page {
@@ -337,7 +487,8 @@ padding: 14px;
   text-align: center;
   height: 411px; 
   text-align: center;
-
+  padding-top: 92px;
+  box-sizing: border-box;
 }
 
 .contacts {
@@ -345,9 +496,14 @@ padding: 14px;
   text-align: center;
   margin-right: 41.5px;
   margin-left: 41.5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  text-decoration: none;
 }
 
-.first-navigation-items {
+.navigation-items:not(:last-child){
   margin-right: 34px;
 }
 
@@ -359,6 +515,45 @@ padding: 14px;
   padding-right: 8px;
 }
 
+.mailing-list-form {
+ width: 600px;
+ height: 60px; 
+ box-sizing: border-box;
+ border-radius: 10px;
+ border: 0;
+ padding: 20px;
+ background-color: rgba(242, 242, 242, 1);
+}
+
+.mailing-list-form-2 {
+  width: 600px;
+  height: 60px; 
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 0;
+  padding: 20px;
+  background-color: rgba(242, 242, 242, 1);
+ }
+
+.mailing-list-label {
+display: flex;
+justify-content: center;
+margin: 0;
+}
+
+.mailing-list-buttom {
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #82B3D3;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .button-favorite-blue {
   background-color: #82B3D3;
   padding:15px;
@@ -367,6 +562,8 @@ padding: 14px;
   border: 0px;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
+
 }
 
 .button-favorite-green {
@@ -377,9 +574,21 @@ padding: 14px;
   border: 0px;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.button-more {
+.button-brown {
+  background-color:#756157 ;
+  padding:15px;
+  padding-top:9px;
+  padding-bottom:8px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-button-brown {
   background-color:#756157 ;
   padding:15px;
   padding-top:9px;
@@ -388,6 +597,14 @@ padding: 14px;
   color: white;
   border-radius: 5px;
   margin-right: 20px;
+  margin-top: 15px; 
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .button-rating {
@@ -396,10 +613,18 @@ padding: 14px;
   padding-bottom:8px;
   border: 0px;
   border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.rating {
+ display: flex; 
 }
 
 .hotels-list-botton {
   margin-bottom: 18px;
+  cursor: pointer;
 }
 
 .hotels-list-wrapper {
@@ -414,6 +639,7 @@ padding-right: 16px;
   height: 66px;
   border: 0px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .number-of-page-gray {
@@ -421,9 +647,19 @@ padding-right: 16px;
   height: 66px;
   border: 0px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .number-of-page-paragraph {
   display: inline;
   padding-right: 51px;
+}
+
+.stic {
+  width: 1055px;
+  height: 1px;
+  background-color: rgba(230, 230, 230, 1);
+  margin: 0 auto;
+  margin-top: 66px;
+  margin-bottom: 30px;
 }
