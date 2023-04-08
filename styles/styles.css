@@ -87,13 +87,17 @@ bottom {
   background-color: #82B3D3;
   color: white;
   width: 400px;
-  height: 384px;
   text-align: center;
   padding-top: 92px;
   flex-grow: 1;
 }
-.position-center {
 
+.blue-container-paragraph {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.position-center {
  width: 230px;
  margin-left: auto;
  margin-right: auto;
@@ -101,18 +105,22 @@ bottom {
 }
 
 .blue-container-reversed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
   background-color: #82B3D3;
   color: white;
-  width: 400px;
-  height: 384px; 
   text-align: center;
   padding-top: 92px;
   flex-grow: 1;
 }
 
 .canyon {
- margin: 0 auto; 
+  display: flex;
+  max-width: 1200px;
+  min-width: 800px;
+  object-fit:cover;
 } 
 
 .wrapper {
@@ -133,7 +141,6 @@ bottom {
  background-repeat: no-repeat;
  text-align: center;
  color: white;
- height: 411px; 
  padding-top: 92px;
  box-sizing: border-box;
 }
@@ -150,7 +157,7 @@ bottom {
  background-repeat: no-repeat;
  color: white;
  height: 403px;
- padding: 30px 70px
+ padding: 30px 70px;
 }
 
 .main-navigation {
@@ -160,30 +167,37 @@ bottom {
 }
 
 .first-navigation-list {
-  width: 430px;
+  width: 630px;
   display: flex;
   flex-wrap: wrap;
   align-items:center;
+  justify-content: start;
+  padding-left: 30px;
 }
 
 .navigation-links {
 color: black;
 text-decoration: none;
 font-weight: 700;
+
 }
 
 .navigation-image {
   width: 140px;
-  margin-left: 70px;
-  margin-right: 30px;
+  justify-content: start;
+  padding-left: 70px;
 }
 
 .second-navigation-list  {
   display: flex;
   flex-wrap: wrap;
   width: 270px;
-  margin-left: auto;
-  margin-right: 30px;
+  justify-content: end;
+  align-items: center;
+}
+
+.second-navigation-list-links {
+ display: block; 
 }
 
 .welcom-to-sedona {
@@ -227,21 +241,23 @@ font-weight: 700;
   max-width: 1200px;
   min-width: 800px;
   margin: 0 auto;
+  object-fit:cover;
 }
 
-.choice-housing {
+.facts-list-2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.facts-list-item {
+  width: 400px;
+  text-align: center;
+  flex-grow: 1;
+  padding-bottom: 50px;
 }
 
 .houses {
-  box-sizing: border-box;
-  width: 400px;
-  height: 384px;
- text-align: center;
  background-color: rgba(131, 179, 211, 0.12);
-  flex-grow: 1;
 }
 
 .padding {
@@ -250,7 +266,7 @@ font-weight: 700;
 }
 
 .advantages {
-  margin-top: 102px;
+  margin-top: 103px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -278,19 +294,8 @@ line-height: 36px;
  margin-top: 30px; 
 }
 
-.food {
-  width: 400px;
-  height: 384px;
-  text-align: center;
-  flex-grow: 1;
-}
-
 .souvenirs {
-  width: 400px;
-  height: 384px;
-  text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
-  flex-grow: 1;
 }
 
 .list-vrapper {
@@ -306,52 +311,39 @@ margin: 0;
 }
 
 .small-place {
-  width: 400px;
-  height: 384px;
-  text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
-  flex-grow: 1;
-  flex-wrap: wrap;
+
 }
 
 .beatiful-trip {
-  width: 400px;
-  height: 384px;
-  text-align: center;
   background-color: rgba(131, 179, 211, 0.2);
-  flex-grow: 1;
 }
 
 .few-tourists {
-  width: 400px;
-  height: 384px;
-  text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
-  flex-grow: 1;
 }
 
 .find-hotel {
   text-align: center;
-  height: 417px;
+
   padding-top: 90px;
   box-sizing: border-box;
+
 }
 
 .button-brown-find-hotel {
   background-color:#756157 ;
   padding:15px;
-  padding-top:9px;
-  padding-bottom:8px;
   border: 0px;
   color: white;
   border-radius: 5px;
-  width: 584px;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px; 
   margin-top: 70px;
   cursor: pointer;
+  width: 700px;
+  margin-bottom: 70px;
 }
 
 .main-footer {
@@ -384,6 +376,8 @@ margin: 0;
 .sedona-small-town-paragraph {
   text-align: center;
   width: 620px;
+  font-size: 30px;
+line-height: 36px;
 }
 
 .infrastructure {
@@ -443,23 +437,60 @@ padding: 14px;
 
 }
 
-.hotels-list {
+.hotels {
   display: flex;
   width: 1060px;
   margin: 0 auto;
 }
 
-.hotels-list-item {
-  width: 300px;
-  height: 440px;
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
+.hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 0 18px;
 }
 
-.margin-right:not(:nth-child(3n)) {
-  margin-right: 40px;
+.hotels-list-item {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.hotels-list-images {
+  size: 100%;
+}
+
+.hotels-list-grid {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto 37px 37px 37px;
+  gap: 20px;
+}
+
+.hotels-list-paragraph {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.hotels-list-price {
+  grid-column: 1 / 2;
+  
+  margin: 0;
+}
+
+.hotels-list-price-2 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  margin: 0;
+}
+
+.hotels-list-rating-picture {
+  grid-row: 4 / 5
+}
+
+.hotels-list-rating {
+  grid-row: 4 / 5
 }
 
 .whats-find {
@@ -493,8 +524,6 @@ padding: 14px;
 
 .mailing-list-2 {
   text-align: center;
-  height: 411px; 
-  text-align: center;
   padding-top: 92px;
   box-sizing: border-box;
 }
@@ -517,6 +546,7 @@ padding: 14px;
 
 .favorite-icon {
   padding-right: 20px;
+  display: inline-block;
 }
 
 .options-item {
@@ -525,7 +555,6 @@ padding: 14px;
 
 .mailing-list-form {
  width: 600px;
- height: 60px; 
  box-sizing: border-box;
  border-radius: 10px;
  border: 0;
@@ -533,9 +562,8 @@ padding: 14px;
  background-color: rgba(242, 242, 242, 1);
 }
 
-.mailing-list-form-2 {
+.mailing-list-lable-2 {
   width: 600px;
-  height: 60px; 
   box-sizing: border-box;
   border-radius: 10px;
   border: 0;
@@ -547,12 +575,13 @@ padding: 14px;
 display: flex;
 justify-content: center;
 margin: 0;
+margin-bottom: 100px;
 }
 
 .mailing-list-buttom {
   cursor: pointer;
   width: 200px;
-  height: 60px;
+  padding: 15px;
   border: 0;
   border-radius: 10px;
   background-color: #82B3D3;
@@ -572,7 +601,8 @@ margin: 0;
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  margin-left: 20px;
+  grid-column:2 / 4;
+  grid-row: 3 / 4;
 }
 
 .button-favorite-green {
@@ -585,7 +615,8 @@ margin: 0;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 20px;
+  grid-column:2 / 4;
+  grid-row: 3 / 4;
 }
 
 .button-brown {
@@ -601,6 +632,7 @@ margin: 0;
 }
 
 .navigation-button-brown {
+  width: 100px;
   padding:15px;
   padding-top:9px;
   padding-bottom:8px;
@@ -608,10 +640,7 @@ margin: 0;
   border: 0px;
   color: white;
   border-radius: 5px;
-  margin-right: 20px;
-  margin-top: 15px; 
   cursor: pointer;
-  margin-bottom: 10px;
 }
 
 .facts {
@@ -621,13 +650,13 @@ margin: 0;
 
 .button-rating {
   width: 140px;
+
   padding:15px;
   padding-top:9px;
   padding-bottom:8px;
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: auto;
   box-sizing: border-box;
 }
 

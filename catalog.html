@@ -10,41 +10,41 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <header>
-        <nav class="main-navigation background-color">
-            <a href="index.html" class="navigation-image"><img src="img/sedona-logo.svg" width="137" height="70"
+        <nav class="main-navigation">
+            <a href="index.html" class="navigation-image"><img src="img/sedona-logo.svg"
                     alt="Лого Седоны" /></a>
 
-            <ul class="first-navigation-list lists-style">
-                <li class="navigation-items">
-                    <a href="index.html" class="navigation-links">Главная</a>
-                </li>
-                <li class="navigation-items">
-                    <a href="contacts.html" class="navigation-links">О нас</a>
-                </li>
-                <li class="navigation-items">
-                    <a href="catalog.html" class="navigation-links">Гостинницы</a>
-                </li>
-            </ul>
+                    <ul class="first-navigation-list lists-style">
+                        <li class="navigation-items">
+                            <a href="index.html" class="navigation-links">Главная</a>
+                        </li>
+                        <li class="navigation-items">
+                            <a href="contacts.html" class="navigation-links">О нас</a>
+                        </li>
+                        <li class="navigation-items">
+                            <a href="catalog.html" class="navigation-links">Гостинницы</a>
+                        </li>
+                    </ul>
             <ul class="second-navigation-list lists-style">
                 <li>
-                    <a href="#">
-                        <img src="img/icons/search-icon.svg" alt="Поиск" width="44" height="66">
+                    <a  class="second-navigation-list-links" href="#">
+                        <img src="img/icons/search-icon.svg" alt="Поиск">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное" width="44" height="66">
+                    <a class="second-navigation-list-links" href="#">
+                        <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное">
                     </a>
                 </li>
-                <li>
+                <li class="second-navigation-list-items">
                     <button type="button" class="navigation-button-brown">Хочу сюда</button>
                 </li>
             </ul>
         </nav>
     </header>
         <main>
-            <div class="wrapper">
             <section class="hotels-in-sedona">
                 <h1 class="display-block hotels-in-sedona-paragraph">Гостинницы Седоны</h1>
                 <ol class="bread-crubs lists-style">
@@ -137,67 +137,63 @@
                     </li>
                 </ul>
             </section>
-            <section class="hotels-list">
+            <section class="hotels">
                 <h2 class="visually-hidden">Выбор гостиниц</h2>
-                <ul class="lists-style">
-                    <li class="hotels-list-item margin-right">
-                        <img src="img/hotels/Amara Resort & Spa.jpg" width="300" height="211"
-                            alt="Гостиница Amara Resort & Spa">
-                        <h1>Amara Resort & Spa</h1>
-                        <p>Гостиница От 4000 ₽</p>
-                      <div class="hotels-list-botton">
+                <ul class="hotels-list lists-style">
+                
+                    <li class="hotels-list-item"> 
+                      <img src="img/hotels/Amara Resort & Spa.jpg" width="300" height="211"alt="Гостиница Amara Resort & Spa">
+                      <div class="hotels-list-grid">
+                        <h1 class="hotels-list-paragraph">Amara Resort & Spa</h1>
+                        <p class="hotels-list-price">Гостиница</p>
+                        <p class="hotels-list-price-2">От 4000 $</p>
                         <button class="button-brown">Подробнее</button>
                         <button class="button-favorite-blue">В избранное</button>
+                        <img class="hotels-list-rating-picture" src="img/icons/4-stars-icon.svg">
+                        <button class="button-rating hotels-list-rating">Рейтинг: 8,5</button>
                       </div>
-                      <div class="rating">
-                        <img src="img/icons/4-stars-icon.svg">
-                        <button class="button-rating">Рейтинг: 8,5</button>
-                    </div>
                     </li>
 
-                    <li class="hotels-list-item margin-right"><img src="img/hotels/Villas at Poco Diablo.jpg" width="300"
-                            height="211" alt="Гостиница Villas at Poco Diablo">
-                      
-                        <h1>Villas at Poco Diablo</h1>
-                        <p>Гостиница От 5000 ₽ </p>
-                        <div class="hotels-list-botton">
+                    <li class="hotels-list-item">
+                        <img class="hotels-list-images" src="img/hotels/Villas at Poco Diablo.jpg" alt="Гостиница Villas at Poco Diablo">
+                            <div class="hotels-list-grid">
+                        <h1 class="hotels-list-paragraph">Villas at Poco Diablo</h1>
+                        <p class="hotels-list-price">Гостиница</p>
+                        <p class="hotels-list-price-2"> От 5000 $ </p>
                         <button class="button-brown">Подробнее</button>
                         <button class="button-favorite-green">В избранном</button>
-                    </div>
-                    <div class="rating">
-                        <img src="img/icons/4-stars-icon.svg">
-                        <button class="button-rating">Рейтинг: 9,2</button>
-                    </div>
-                    </li>
-
-                    <li class="hotels-list-item margin-right"><img src="img/hotels/Desert Quail Inn.jpg" width="300" height="211"
-                            alt="Гостиница Desert Quail Inn">
-                        <h1>Desert Quail Inn</h1>
-                        <p>Гостиница От 2500 ₽</p>
-                        <div class="hotels-list-botton">
-                        <button class="button-brown">Подробнее</button>
-                        <button class="button-favorite-blue">В избранное</button><br>
+                        <img class="hotels-list-rating-picture" src="img/icons/4-stars-icon.svg">
+                        <button class="button-rating hotels-list-rating">Рейтинг: 9,2</button>
                         </div>
-                        <div>
-                            <div class="rating">
-                            <img src="img/icons/3-stars-icon.svg">
-                        <button class="button-rating">Рейтинг: 6,9</button>
-                    </div>
                     </li>
 
-                    <li class="hotels-list-item margin-right"><img src="img/hotels/GreenTree Inn.jpg" width="300" height="211"
+                    <li class="hotels-list-item">
+                        <img src="img/hotels/Desert Quail Inn.jpg" width="300" height="211"
+                            alt="Гостиница Desert Quail Inn">
+                            <div class="hotels-list-grid">
+                            <h1 class="hotels-list-paragraph">Desert Quail Inn</h1>
+                            <p class="hotels-list-price">Гостиница</p>
+                            <p class="hotels-list-price-2">От 2500 $</p>
+                            <button class="button-brown">Подробнее</button>
+                            <button class="button-favorite-blue">В избранное</button><br>
+                            <img class="hotels-list-rating-picture" src="img/icons/3-stars-icon.svg" >
+                            <button class="button-rating hotels-list-rating">Рейтинг: 6,9</button>
+                            </div>
+                    </li>
+
+                        <li class="hotels-list-item margin-right"> 
+                        <img src="img/hotels/GreenTree Inn.jpg" width="300" height="211"
                             alt="Гостиница GreenTree Inn">
-                        <h1> GreenTree Inn </h1>
-                        <p>Гостиница От 1500 ₽ </p>
-                        <div class="hotels-list-botton">
+                            <div class="hotels-list-grid">
+                        <h1 class="hotels-list-paragraph"> GreenTree Inn </h1>
+                        <p class="hotels-list-price">Гостиница</p>
+                        <p class="hotels-list-price-2"> От 1500 $ </p>
                         <button class="button-brown">Подробнее</button>
                         <button class="button-favorite-blue">В избранное</button>
+                            <img class="hotels-list-rating-picture" src="img/icons/2-stars-icon.svg">
+                        <button class="button-rating hotels-list-rating">Рейтинг: 5,0</button>
                         </div>
-                        <div class="rating">
-                            <img src="img/icons/2-stars-icon.svg">
-                        <button class="button-rating">Рейтинг: 5,0</button>
-                    </div>
-                    </li>
+                </li>
                 </ul>
             </section>
 
@@ -226,7 +222,7 @@
                     Только полезная информация и никакого спама, честное бойскаутское!
                 </p>
                 <form>
-                    <input  class="mailing-list-form-2" type="text" name="email" id="mailing-list" value="Ваш имеил">
+                    <input  class="mailing-list-lable-2" type="text" name="email" id="mailing-list" value="Ваш имеил">
                     <button class="mailing-list-buttom">Подписаться</button>
                 </form>
             </section>

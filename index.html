@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <header>
-        <nav class="main-navigation background-color">
-            <a href="#" class="navigation-image"><img src="img/sedona-logo.svg" width="137" height="70"
+        <nav class="main-navigation">
+            <a href="#" class="navigation-image"><img src="img/sedona-logo.svg"
                     alt="Лого Седоны" /></a>
 
                     <ul class="first-navigation-list lists-style">
@@ -28,23 +29,22 @@
                     </ul>
             <ul class="second-navigation-list lists-style">
                 <li>
-                    <a href="#">
-                        <img src="img/icons/search-icon.svg" alt="Поиск" width="44" height="66">
+                    <a  class="second-navigation-list-links" href="#">
+                        <img src="img/icons/search-icon.svg" alt="Поиск">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное" width="44" height="66">
+                    <a class="second-navigation-list-links" href="#">
+                        <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное">
                     </a>
                 </li>
-                <li>
+                <li class="second-navigation-list-items">
                     <button type="button" class="navigation-button-brown">Хочу сюда</button>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="wrapper">
             <section class="about-sedona">
                 <img class="welcom-to-the-gorgeous" src="img/vectors/welcome-vector.svg" width="187" height="44"
                     alt="Добро пожаловать" />
@@ -66,24 +66,23 @@
                     <div class="blue-wrapper">
                         <li class="blue-container">
                             <b>
-                                <p class="position-center">Настоящий городок</p>
+                                <p class="blue-container-paragraph position-center">Настоящий городок</p>
                             </b>
                             <p class="position-center">— №1 —</p>
                             <p class="position-center">
                                 Седона — не аттракцион для туристов, там течёт своя жизнь
                             </p>
                         </li>
-                        <img class="beautiful-build" src="img/hotel.jpg" width="800" height="384"
+                        <img class="beautiful-build" src="img/hotel.jpg" 
                             alt="Красивое здание" />
                     </div>
-                    <h2 class="visually-hidden">Выбор жилья</h2>
-                    <ul class="choice-housing lists-style">
-                        <li class="houses">
+                    <ul class="facts-list-2 lists-style">
+                        <li class="houses facts-list-item">
                             <img class="padding" src="img/icons/home-icon.svg">
                             <h2 class="position-center">Жилье</h2>
                             <p class="position-center">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
-                        <li class="food">
+                        <li class="food facts-list-item">
                             <img class="padding" src="img/icons/burger-icon.svg" />
                             <h2 class="position-center">Еда</h2>
                             <p class="position-center">
@@ -92,7 +91,7 @@
                             </p>
                         </li>
 
-                        <li class="souvenirs">
+                        <li class="souvenirs facts-list-item">
                             <img class="padding" src="img/icons/gift-icon.svg" />
                             <h2 class="position-center">Сувениры</h2>
                             <p class="position-center">
@@ -102,9 +101,9 @@
                         
                     </ul>
                     <div class="blue-wrapper">
-                        <img class="canyon" src="img/canyon.jpg" width="800" height="384" alt="Каньон" />
-                         <li class="blue-container-reversed">
-                            <p class="position-center"><b>Там есть мост дьявола</b></p>
+                        <img class="canyon" src="img/canyon.jpg" alt="Каньон" />
+                        <li class="blue-container-reversed facts-list-item">
+                            <p class="position-center"><b class="blue-container-paragraph">Там есть мост дьявола</b></p>
                             <p class="position-center">— №2 —</p>
                             <p class="position-center">
                                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -112,7 +111,7 @@
                         </li>
                     </div>
                     <div class="list-vrapper">
-                        <li class="small-place">
+                        <li class="small-place facts-list-item">
                             <b class="position-center">
                                 <p class="advantages">Небольшая площадь</p>
                             </b>
@@ -120,14 +119,14 @@
                             <p class="position-center">Все достопримечательности находятся очень близко</p>
                         </li>
 
-                        <li class="beatiful-trip">
+                        <li class="beatiful-trip facts-list-item">
                             <b class="position-center">
                                 <p class="advantages">Красивая дорога</p>
                             </b>
                             <p class="position-center">— №4 —</p>
                             <p class="position-center">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </li>
-                        <li class="few-tourists">
+                        <li class="few-tourists facts-list-item">
                             <b class="position-center">
                                 <p class="advantages">Мало туристов</p>
                             </b>
@@ -144,7 +143,7 @@
                     Укажите предполагаемые даты поездки,и мы покажем вам лучшие
                     предложения гостиниц в Седоне
                 </p>
-                <button type="button" class="button-brown-find-hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                <button type="button" class="button-brown-find-hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
             </section>
 
             <section class="mailing-list">
@@ -155,22 +154,22 @@
                 </p>
                 <form class="mailing-list-label">
                     <label for="mailing-list"></label>
-                    <input  class="mailing-list-form" type="text" name="email" id="mailing-list" value="Ваш имеил">
+                    <input  class="mailing-list-form" type="text" name="email" id="mailing-list" value="Ваш имеил" >
                     <button class="mailing-list-buttom">Подписаться</button>
                 </form>
             </section>
-        </div>
-    </main>
-    <footer class="main-footer background-color">
-        <ul class="social-media lists-style">
-            <li><img src="img/icons/vk-icon.svg" alt="Лого ВК" /></li>
-            <li><img src="img/icons/telegram-icon.svg" alt="Лого Телеграм" /></li>
-            <li><img src="img/icons/youtube-icon.svg" alt="Лого Ютуб" /></li>
-        </ul>
-        <a class="contacts" href="0967980556">0967980556</a>
-
-        <img class="footer-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="Лого HTMLакадемии" />
-    </footer>
+        </main>
+    </div>
+        <footer class="main-footer background-color">
+            <ul class="social-media lists-style">
+                <li><img src="img/icons/vk-icon.svg" alt="Лого ВК" /></li>
+                <li><img src="img/icons/telegram-icon.svg" alt="Лого Телеграм" /></li>
+                <li><img src="img/icons/youtube-icon.svg" alt="Лого Ютуб" /></li>
+            </ul>
+            <a class="contacts" href="0967980556">0967980556</a>
+            
+            <img class="footer-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="Лого HTMLакадемии" />
+        </footer>
 </body>
 
 </html>
