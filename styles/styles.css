@@ -318,7 +318,7 @@ bottom {
 
 .hotels-in-sedona {
   display: block;
- background-image: url("../Sedona/img/filter.jpg");
+ background-image: url("/Sedona/img/filter.jpg");
  background-size: 105%;
  background-position: -4px;
  background-repeat: no-repeat;
