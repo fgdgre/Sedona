@@ -182,10 +182,6 @@ bottom {
   background-repeat: no-repeat;
 }
 
-.decorative-image {
-  
-}
-
 .welcom-to-the-gorgeous{
   display: block;
   margin-left: auto;
@@ -322,7 +318,7 @@ bottom {
 
 .hotels-in-sedona {
   display: block;
- background-image: url("/Sedona/img/Фильтр.jpg");
+ background-image: url("/Sedona/img/filter.jpg");
  background-size: 110%;
  background-position: -10px;
  background-repeat: no-repeat;
