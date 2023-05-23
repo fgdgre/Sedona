@@ -20,14 +20,6 @@ body {
     font-display: swap;
     
 }
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/PTSans-Italic.ttf") format(woff2);
-    font-display: swap;
-    
-}
 
 body {
     font-family: "PT Sans", sans-serif;
