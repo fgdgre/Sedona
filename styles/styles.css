@@ -435,8 +435,6 @@ main {
 .hotels-in-sedona {
   display: block;
   background-image: url("/Sedona/img/blur-backgrounds/2-blur-background-2.jpg");
-  background-repeat: no-repeat;
-  object-fit: cover;
   color: white;
   width: 1200px;
   min-height: 403px;
