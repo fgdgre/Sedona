@@ -16,7 +16,7 @@ body {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/PTSans-Bold.ttf") format(woff2);
+    src: url("../fonts/PTSans-Bold.ttf") format(woff2);
     font-display: swap;
     
 }
@@ -24,7 +24,7 @@ body {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/PTSans-Italic.ttf") format(woff2);
+    src: url("../fonts/PTSans-Italic.ttf") format(woff2);
     font-display: swap;
     
 }
