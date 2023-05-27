@@ -43,11 +43,308 @@ main {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background-color: white;
   width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
   box-shadow: 0 0 10px 1px rgb(184, 184, 184);
+}
+
+.popup-wrapper {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
+}
+
+.popup {
+  display: block;
+  position: relative;
+  width: 715px;
+  min-height: 515px;
+  max-height: 645px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 70px;
+  box-sizing: border-box;
+  margin: auto;
+  overflow: hidden;
+}
+
+.popup-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 575px;
+}
+
+.popup-header-wrapper {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.popup-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  align-self: center;
+  margin: 0;
+}
+
+.popup-button-close {
+  position: absolute;
+  right: 70px;
+  top: 60px;
+  background-image: url("../img/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 53px;
+  height: 53px;
+  border: none;
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* 
+.popup-button-close:focus + .popup {
+ display: none;
+} */
+
+.arraval-date-wrapper {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.arraval-date {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+}
+
+.arraval-date-label {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.arraval-date-input {
+  width: 420px;
+  min-height: 50px;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+.invalid-data {
+  display: flex;
+  flex-wrap: wrap;
+  width: 425px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 87, 87, 1);
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  align-self: end;
+}
+
+.date-of-departure-wrapper {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.date-of-departure-label {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.date-of-departure {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+}
+
+.date-of-departure-input {
+  width: 420px;
+  min-height: 50px;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+.date-of-departure-paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  width: 425px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  align-self: end;
+}
+
+.adults-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  width: 260px;
+  margin-bottom: 40px;
+}
+
+.adults-label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 290px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.adults-input {
+  width: 120px;
+  min-height: 50px;
+  margin-left: 40px;
+}
+
+
+.adults-input::-webkit-outer-spin-button,
+.adults-input::-webkit-inner-spin-button {
+  uppercase: none;
+  margin: 0;
+}
+
+.children-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 250px;
+}
+
+.children-label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 230px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.children-icon {
+ position: relative;
+}
+
+.children-icon::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 55px;
+  content: "i";
+  width: 25px;
+  height: 25px;
+  background-color: #82B3D3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.children-icon::after(:hover){
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.children-icon:hover .popover {
+  display: block;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -100%;
+  width: 256px;
+  min-height: 152px;
+  background: rgba(51, 51, 51, 1);
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.popover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 105px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: rgba(51, 51, 51, 1);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.children-input {
+  width: 120px;
+  min-height: 50px;
+  margin-left: 40px;
+}
+
+.popup-button-find {
+  width: 575px;
+  min-height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.popup-button-find:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.popup-button-find:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.popup-button-find:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-navigation {
@@ -568,6 +865,7 @@ main {
   margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 30px;
+  vertical-align: bottom;
 }
 
 .social-media {
@@ -1055,11 +1353,26 @@ margin-bottom: 90px;
 
 }
 
-.button-brown:active, .button-brown-find-hotel:active, .button-favorite-blue:active, 
-.button-favorite-green:active, .navigation-button-brown:active, .mailing-list-buttom:active, 
-.button-apply-blue:active, .botton-clear-transparent:active {
+.button-brown:active,
+.button-brown-find-hotel:active, 
+.button-favorite-blue:active, 
+.button-favorite-green:active,
+.navigation-button-brown:active, 
+.mailing-list-buttom:active, 
+.button-apply-blue:active, 
+.botton-clear-transparent:active {
   color: rgba(255, 255, 255, 0.3);
+}
 
+.button-brown:disabled,
+.button-brown-find-hotel:disabled, 
+.button-favorite-blue:disabled, 
+.button-favorite-green:disabled,
+.navigation-button-brown:disabled, 
+.mailing-list-buttom:disabled, 
+.button-apply-blue:disabled,  {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .button-favorite-green {
