@@ -1487,17 +1487,6 @@ margin-bottom: 90px;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-brown:disabled,
-.button-brown-find-hotel:disabled, 
-.button-favorite-blue:disabled, 
-.button-favorite-green:disabled,
-.navigation-button-brown:disabled, 
-.mailing-list-buttom:disabled, 
-.button-apply-blue:disabled,  {
-  background-color: rgba(229, 229, 229, 1);
-  color: rgba(255, 255, 255, 1);
-}
-
 .button-favorite-green {
   font-weight: 700;
   font-size: 14px;
