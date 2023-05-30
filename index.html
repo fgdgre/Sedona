@@ -49,20 +49,39 @@
                       <button type="button" class="popup-button-close"></button>
                     </span> 
                     <span class="arraval-date-wrapper">
-                      <label class="arraval-date-label"> <span class="arraval-date">Дата заезда:</span>
-                        <input class="arraval-date-input" type="date" name="arraval-date" id="arraval-date-field">
+                      <label class="arraval-date-label"> <span class="arraval-date">Дата Заезда:</span>
+                        <span class="relative">
+                        <input class="arraval-date-input" type="text" name="arraval-date" id="arraval-date-field" required>
+                        <button class="calendar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><g clip-path="url(#a)" opacity=".3"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g><defs><clipPath id="a"><path d="M0 0h15v15H0z"/></clipPath></defs></svg>                        </button>
+                        </span>
                         <p class="invalid-data">Мы не можем отправить вас в прошлое.</p>
                       </label>
                     </span>
                     <span class="date-of-departure-wrapper">
-                      <label class="date-of-departure-label"><span class="date-of-departure">Дата выезда:</span>
-                        <input class="date-of-departure-input" type="date" name="date-of-departure" id="date-of-departure-field">
+                      <label class="date-of-departure-label"><span class="date-of-departure">Дата Выезда:</span>
+                        <span class="relative">
+                        <input class="date-of-departure-input" type="text" name="date-of-departure" id="date-of-departure-field" required>
+                        <button class="calendar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><g clip-path="url(#a)" opacity=".3"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g><defs><clipPath id="a"><path d="M0 0h15v15H0z"/></clipPath></defs></svg>                        </button>
+                        </span>
                         <p class="date-of-departure-paragraph">На эти даты есть свободные номера. Пока есть.</p>
                       </label>
                     </span>
                     <span class="adults-wrapper">
                       <label class="adults-label"> <span class="adults">Взрослые:</span>
-                        <input class="adults-input" type="number" name="adults" id="adults-field">
+                        <span class="relative">
+                        <input class="adults-input" type="number" name="adults" id="adults-field" min="1" max="5" required>
+                        <button class="less-adults" type="button">
+                          <div class="minus"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1"><path d="M0 0v1h13V0H0Z" opacity=".3"/></svg>
+                          </div>
+                        </button>
+                        <button class="more-adults" type="button">
+                            <div class="plus">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><g clip-path="url(#a)" opacity=".3"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></g><defs><clipPath id="a"><path d="M0 0h13v13H0z"/></clipPath></defs></svg>
+                            </div>
+                          </button>
+                        </span>
                       </label>
                     </span>
                     <span class="children-wrapper">
@@ -73,8 +92,19 @@
                             Дети до 6 лет размещаются бесплатно.
                           </div>
                         </span>
-                        <input class="children-input" type="number" name="children" id="children-field">
-                      </label>
+                        <span class="relative">
+                        <input class="children-input" type="number" name="children" id="children-field" min="0" max="5" required pattern="[0-5]">
+                        <button class="less-children" type="button">
+                            <div class="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1"><path d="M0 0v1h13V0H0Z" opacity=".3"/></svg>
+                            </div>
+                          </button>
+                          <button class="more-children" type="button">
+                              <div class="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><g clip-path="url(#a)" opacity=".3"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></g><defs><clipPath id="a"><path d="M0 0h13v13H0z"/></clipPath></defs></svg>
+                              </div>
+                            </button>
+                        </label>
                     </span>
                     <button class="popup-button-find" type="submit">Найти</button>
               </form>
@@ -197,9 +227,9 @@
                 <p class="mailing-list-paragraph">
                     Только полезная информация и никакого спама,<br> честное бойскаутское!
                 </p>
-                <form class="mailing-list-label">
+                <form class="mailing-list-label" action="#" method="get">
                     <label for="mailing-list"></label>
-                    <input  class="mailing-list-form" type="text" name="email" id="mailing-list" value="Ваш e-mail" >
+                    <input  class="mailing-list-form" type="email" name="email" id="mailing-list" placeholder="Ваш e-mail" required>
                     <button class="mailing-list-buttom">Подписаться</button>
                 </form>
             </section>

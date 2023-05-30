@@ -111,8 +111,8 @@
                             <label>
                                 <p class="price-paragraph">Стоимость, $:</p>
                         <div class="bottom-price">
-                                    <input class="display-block" type="number" value="0">
-                                    <input class="display-block-2" type="number" value="9000">
+                                    <input class="display-block" type="number" min="0" max="10000" value="0" required>
+                                    <input class="display-block-2" type="number" min="0" max="10000" value="9000" required>
                         </div>
                         <div class="range-input">
                             <div class="range-bar"></div>
@@ -252,9 +252,9 @@
                     Только полезная информация и никакого спама,
                     <br> честное бойскаутское!
                 </p>
-                <form class="mailing-list-label">
+                <form class="mailing-list-label" action="#" method="get">
                     <label for="mailing-list"></label>
-                    <input  class="mailing-list-form" type="text" name="email" id="mailing-list" value="Ваш e-mail" >
+                    <input  class="mailing-list-form" type="email" name="email" id="mailing-list" placeholder="Ваш e-mail" required>
                     <button class="mailing-list-buttom">Подписаться</button>
                 </form>
             </section>
