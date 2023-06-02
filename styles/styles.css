@@ -793,7 +793,12 @@ main {
 
 .decorative-image {
   position: absolute;
-  bottom: -5px;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/image\ \(1\).svg");
+  width: 1200px;
+  height: 57px;
 }
 
 .background-color {
@@ -1128,13 +1133,16 @@ main {
 }
 
 .infrastructure {
- min-width: 150px;
- min-height: 150px;
- margin-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 150px;
+  min-height: 150px;
 }
 
 .infrastructure-form {
   display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
 }
 
 .infrastructure-wrapper {
@@ -1142,13 +1150,14 @@ main {
 }
 
 .apartaments-items {
-  width: 160px;
   display: flex;
-  margin: 10px; 
-  align-items: center;
-  margin-left: 0;
-  position: relative;
+  flex-wrap: wrap;
+  width: 160px;
   min-height: 21px;
+  margin: 10px; 
+  margin-left: 0;
+  align-items: center;
+  position: relative;
 }
 
 .price-paragraph {
@@ -1289,9 +1298,16 @@ main {
 
 .how-find {
   display:flex;
- width: 1060px;
- margin:0 auto;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin:0 auto;
 }
+
+.select-wrapper {
+  position: relative;
+  display: block;
+  width: 300px; 
+ }
 
 .select {
 position: relative;
@@ -1321,13 +1337,8 @@ line-height: 21px;
  position: absolute;
  width: 15px;
  height: 15px;
- right: 40px;
+ right: 25px;
  top: 15px;
-}
-
-.select-wrapper {
- position: relative;
- display: block; 
 }
 
 .hotels {
@@ -1407,7 +1418,7 @@ line-height: 21px;
 
 .options {
   display: flex;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .number-of-page {
@@ -1429,11 +1440,36 @@ width: 500px;
   margin-right: 8px;
 }
 
+.select-image-2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  top: 0px;
+ }
+
+.number-of-page-choose-wrapper {
+  position: relative;
+}
+
 .number-of-page-choose {
   width: 160px;
   height: 49px;
   padding: 14px 20px;
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-appearance: none;
+}
 
+.number-of-page-choose:hover {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.number-of-page-choose:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
 }
 
 .mailing-list-2 {
