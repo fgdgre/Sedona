@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="main-navigation">
+          <a href="#" class="navigation-image-link">
+            <img class="navigation-logo" src="img/sedona-logo.svg" alt="Лого Седоны" />
+          </a>
+          <ul class="first-navigation-list navigation-lists-style">
+            <li class="navigation-items">
+              <a href="index.html" class="navigation-links">На головну</a>
+            </li>
+            <li class="navigation-items">
+              <a href="#" class="navigation-links">Про Седону</a>
+            </li>
+            <li class="navigation-items">
+              <a class="navigation-links" href="catalog.html">Готелі</a>
+            </li>
+          </ul>
+          <ul class="second-navigation-list navigation-lists-style">
+            <li>
+              <a class="second-navigation-list-links" href="#">
+                <img src="img/icons/search-icon.svg" alt="Поиск" />
+              </a>
+            </li>
+            <li class="favorite-number-link">
+              <a class="second-navigation-list-links" href="#">
+                <img class="favorite-icon" src="img/icons/favorite-icon.svg" alt="Избранное" />
+              </a>
+              <span class="favorite-number">0</span>
+              <div class="active-page"></div>
+            </li>
+
+            <li>
+              <button class="navigation-button-brown" type="button" onclick="toggleModal()">Хочу сюди!</button>
+            </li>
+          </ul>
+          <div class="popup-wrapper hidden">
+            <div class="popup">
+              <form class="popup-form" action="#" method="get" onsubmit="form(event)">
+                <div class="popup-header-wrapper">
+                  <h1 class="popup-header">Пошук готелю в Седоні</h1>
+                  <button class="popup-button-close" type="button" onclick="toggleModal()">
+                    <svg class="popup-button-close-image" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                      <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="arraval-date-wrapper">
+                  <label class="arraval-date-label" for="arraval-date-field">
+                    <span class="arraval-date">Дата Заїзду:</span>
+                  </label>
+                  <span class="relative">
+                    <input class="arraval-date-input" type="date" name="arraval-date" id="arraval-date-field" />
+                    <button class="calendar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <g clip-path="url(#a)" opacity=".3">
+                          <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                          <path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                          <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a"><path d="M0 0h15v15H0z" /></clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="invalid-data hidden">Мы не можем отправить вас в прошлое.</span>
+                  </span>
+                </span>
+                <span class="date-of-departure-wrapper">
+                  <label class="date-of-departure-label" for="date-of-departure-field">
+                    <span class="date-of-departure">Дата Виїзда:</span>
+                  </label>
+                  <span class="relative">
+                    <input class="date-of-departure-input" type="date" name="date-of-departure" id="date-of-departure-field" />
+                    <button class="calendar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <g clip-path="url(#a)" opacity=".3">
+                          <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                          <path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                          <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                        </g>
+                        <defs><path d="M0 0h15v15H0z" /></defs>
+                      </svg>
+                    </button>
+                    <span class="date-of-departure-paragraph hidden"> На ці дати є вільні номери. Поки є.</span>
+                  </span>
+                </span>
+                <span class="adults-wrapper">
+                  <label class="adults-label" for="adults-field">
+                    <span class="adults">Взрослые:</span>
+                  </label>
+                  <span class="relative">
+                    <input class="adults-input" type="number" name="adults" id="adults-field" min="1" max="5" />
+                    <button class="less-adults" type="button">
+                      <svg class="minus" xmlns="http://www.w3.org/2000/svg" width="13" height="2" viewBox="0 0 13 2">
+                        <path d="M0 0v1h13V0H0Z"></path>
+                      </svg>
+                    </button>
+                    <button class="more-adults" type="button">
+                      <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                        <g clip-path="url(#a)">
+                          <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                        </g>
+                        <defs><path d="M0 0h13v13H0z" /></defs>
+                      </svg>
+                    </button>
+                  </span>
+                </span>
+                <span class="children-wrapper">
+                  <label class="children-label" for="children-field">
+                    <span class="children-icon"
+                      >Дети:
+                      <span class="popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно. </span>
+                    </span>
+                  </label>
+                  <span class="relative">
+                    <input class="children-input" type="number" name="children" id="children-field" min="0" max="5" />
+                    <button class="less-children" type="button">
+                      <svg class="minus" xmlns="http://www.w3.org/2000/svg" width="13" height="2" viewBox="0 0 13 2">
+                        <path d="M0 0v1h13V0H0Z"></path>
+                      </svg>
+                    </button>
+                    <button class="more-children" type="button">
+                      <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                        <g clip-path="url(#a)">
+                          <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                        </g>
+                        <defs><path d="M0 0h13v13H0z" /></defs>
+                      </svg>
+                    </button>
+                  </span>
+                </span>
+                <button class="popup-button-find" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="">
+          <section class="how-find">
+            <h2 class="favorite-hotels">Улюблених готелів: 0</h2>
+            <span class="select-wrapper">
+              <select class="select" onchange="sortHotels()">
+                <option name="1">Спочатку дорогі</option>
+                <option name="2">Спочатку дешеві</option>
+                <option name="3">Найпопулярніші</option>
+              </select>
+              <span class="select-image">
+                <img src="img/vectors/down-arrow.svg" alt="" />
+              </span>
+            </span>
+            <ul class="options lists-style">
+              <li class="options-item">
+                <button class="options-button options-button-active" href="#">
+                  <svg class="option-images" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
+                    <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="options-item">
+                <button class="options-button" href="#">
+                  <svg class="option-images" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
+                    <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="options-item">
+                <button class="options-button" href="#">
+                  <svg class="option-images" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
+                    <path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section class="hotels">
+            <h2 class="visually-hidden">Вибір готелів</h2>
+            <ul class="favorite-hotels-list lists-style"></ul>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
