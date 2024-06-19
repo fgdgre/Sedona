@@ -162,12 +162,12 @@
             </li>
           </ol>
           <div class="infrastructure">
-            <form class="infrastructure-form" name="infrastructure" id="infrastructure" action="#" method="get">
+            <form class="infrastructure-form" name="infrastructure" id="infrastructure" action="#" method="get" onsubmit="getFiltersForGotels(event)">
               <div class="infrastructure-wrapper">
                 <h1 class="infrastructure-header">Инфраструктура:</h1>
                 <span class="infrastructure-items">
                   <label class="infrastructure-label">
-                    <input class="infrastructure-checkbox-visually-hidden" type="checkbox" id="pull" checked />
+                    <input class="infrastructure-checkbox-visually-hidden" type="checkbox" id="pull" />
                     <span class="infrastructure-checkbox">
                       <svg class="infrastructure-checkbox-image" xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10">
                         <g clip-path="url(#a)">
@@ -181,7 +181,7 @@
                 </span>
                 <span class="infrastructure-items">
                   <label class="infrastructure-label">
-                    <input class="infrastructure-checkbox-visually-hidden" type="checkbox" id="parking" checked />
+                    <input class="infrastructure-checkbox-visually-hidden" type="checkbox" id="parking" />
                     <span class="infrastructure-checkbox">
                       <svg class="infrastructure-checkbox-image" xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10">
                         <g clip-path="url(#a)">
@@ -212,7 +212,7 @@
                 <h1 class="infrastructure-header">Тип Житла:</h1>
                 <span class="infrastructure-items">
                   <label class="infrastructure-label">
-                    <input class="infrastructure-radio-visually-hidden" type="radio" id="hotel" checked />
+                    <input class="infrastructure-radio-visually-hidden" name="infrastructure" type="radio" id="hotel" />
                     <span class="infrastructure-radio">
                       <svg class="infrastructure-radio-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <circle cx="5.5" cy="5" r="5" />
@@ -223,7 +223,7 @@
                 </span>
                 <span class="infrastructure-items">
                   <label class="infrastructure-label">
-                    <input class="infrastructure-radio-visually-hidden" type="radio" id="motel" />
+                    <input class="infrastructure-radio-visually-hidden" name="infrastructure" type="radio" id="motel" />
                     <span class="infrastructure-radio">
                       <svg class="infrastructure-radio-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <circle cx="5.5" cy="5" r="5" />
@@ -234,7 +234,7 @@
                 </span>
                 <span class="infrastructure-items">
                   <label class="infrastructure-label">
-                    <input class="infrastructure-radio-visually-hidden" type="radio" id="apartaments" />
+                    <input class="infrastructure-radio-visually-hidden" name="infrastructure" type="radio" id="apartaments" />
                     <span class="infrastructure-radio">
                       <svg class="infrastructure-radio-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <circle cx="5.5" cy="5" r="5" />
@@ -248,17 +248,32 @@
                 <label>
                   <span class="price-paragraph"> Вартість $:</span>
                 </label>
-                <div class="bottom-price">
-                  <input class="display-block" type="number" min="0" max="10000" value="0" />
-                  <input class="display-block-2" type="number" min="0" max="10000" value="9000" />
+                <div class="range-input-wrapper">
+                  <div class="form_control">
+                    <input class="display-block" type="number" id="fromInput" value="0" min="0" max="10000" />
+                    <input class="display-block-2" type="number" id="toInput" value="10000" min="0" max="10000" />
+                  </div>
+                  <div class="sliders_control">
+                    <input class="range-input" id="fromSlider" type="range" value="0" min="0" max="10000" />
+                    <input class="range-input" id="toSlider" type="range" value="10000" min="0" max="10000" />
+                  </div>
                 </div>
-                <div class="range-input">
-                  <div class="range-bar"></div>
+                <!-- <div class="bottom-price">
+                  <input class="display-block" id="fromInput" type="number" min="0" max="10000" value="0" />
+                  <input class="display-block-2" id="toInput" type="number" min="0" max="10000" value="10000" />
                 </div>
+                <div class="range-input-wrapper">
+                  <input class="range-input" id="fromSlider" type="range" min="0" max="10000" value="10000" />
+                  <input class="range-input" id="toSlider" type="range" min="0" max="10000" value="10000" />
+                     <div class="range-bar">
+                    <div class="range-bar-low-range" ondragenter="controlFromInput()" style="left: 0px"></div>
+                    <div class="range-bar-hight-range"></div>
+                  </div>
+                </div> -->
               </div>
               <div class="apply">
                 <input class="button-apply-blue" type="submit" value="Применить" />
-                <button class="botton-clear-transparent" type="reset">Оновити</button>
+                <button class="botton-clear-transparent">Оновити</button>
               </div>
             </form>
           </div>
